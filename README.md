@@ -23,7 +23,7 @@ Cocoapods
 CocoaPods are the best way to manage library dependencies in Objective-C projects.
 Learn more at http://cocoapods.org
 
-Add this to your podfile to add the UIColor+MLPFlatColors category to your project.
+Add this to your podfile to add the UIColor+FPBrandColor category to your project.
 
     pod 'FPBrandColors',  '~> 1.0.0'
 
