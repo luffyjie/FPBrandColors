@@ -590,6 +590,10 @@
 {
     return UIColorFromRGB(0x3388ff);
 }
++ (UIColor *) Venmo
+{
+    return UIColorFromRGB(0x3d95ce);
+}
 + (UIColor *) Verizon
 {
     return UIColorFromRGB(0xef1d1d);
