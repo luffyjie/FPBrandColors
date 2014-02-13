@@ -174,6 +174,7 @@ Color List
     + (UIColor *) TYPO3;
     + (UIColor *) Ubuntu;
     + (UIColor *) Ustream;
+    + (UIColor *) Venmo;
     + (UIColor *) Verizon;
     + (UIColor *) Vimeo;
     + (UIColor *) Vine;
