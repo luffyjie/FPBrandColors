@@ -177,6 +177,8 @@ Color List
     + (UIColor *) Venmo;
     + (UIColor *) Verizon;
     + (UIColor *) Vimeo;
+    + (UIColor *) Windows;
+    + (UIColor *) WindowsPhone;
     + (UIColor *) Vine;
     + (UIColor *) Virb;
     + (UIColor *) VirginMedia;
