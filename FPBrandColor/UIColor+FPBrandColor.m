@@ -590,6 +590,10 @@
 {
     return UIColorFromRGB(0x3388ff);
 }
++ (UIColor *) uTorrent
+{
+    return UIColorFromRGB(0x00853f);
+}
 + (UIColor *) Venmo
 {
     return UIColorFromRGB(0x3d95ce);
@@ -601,6 +605,14 @@
 + (UIColor *) Vimeo
 {
     return UIColorFromRGB(0x44bbff);
+}
++ (UIColor *) Windows
+{
+    return UIColorFromRGB(0x00bcf2);
+}
++ (UIColor *) WindowsPhone
+{
+    return UIColorFromRGB(0x68217a);
 }
 + (UIColor *) Vine
 {
