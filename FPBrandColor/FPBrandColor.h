@@ -9,23 +9,15 @@
 #import <Foundation/Foundation.h>
 
 #if TARGET_OS_IPHONE
-#define FPSystemColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
-                                                    green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
-                                                  blue:((float)(rgbValue & 0xFF))/255.0 \
-                                                 alpha:1.0]
-#else
-#define FPSystemColorFromRGB(rgbValue) [NSColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
-                                                    green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
-                                                  blue:((float)(rgbValue & 0xFF))/255.0 \
-                                                 alpha:1.0]
-#endif
-
-
-#if TARGET_OS_IPHONE
 #define FPSystemColor UIColor
 #else
 #define FPSystemColor NSColor
 #endif
+
+#define FPSystemColorFromRGB(rgbValue) [FPSystemColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+                                                    green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+                                                  blue:((float)(rgbValue & 0xFF))/255.0 \
+                                                 alpha:1.0]
 
 @interface FPBrandColor : NSObject
 
