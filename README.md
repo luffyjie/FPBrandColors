@@ -25,7 +25,7 @@ Learn more at http://cocoapods.org
 
 Add this to your podfile to add the UIColor+FPBrandColor category to your project.
 
-    pod 'FPBrandColors',  '~> 1.0.0'
+    pod 'FPBrandColors',  '~> 0.1.3'
 
 Usage
 ----------
@@ -33,6 +33,14 @@ Usage
 Usage is really simple. Just include `UIColor+FPBrandColor.h` & `UIColor+FPBrandColor.m` in your project if you're not using cocoapods and import the header file you need the colors.
 
     #import "UIColor+FPBrandColor.h"
+
+Example
+--------------
+
+```Obj-C
+
+textLabel.textColor = [UIColor Facebook];
+```
 
 Color List
 ----------
