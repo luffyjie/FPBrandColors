@@ -1,11 +1,11 @@
 FPBrandColors
 =============
 
-A category for UIColor & NSColor a collection of major brand color codes
+A category for UIColor a collection of major brand color codes
 
 About
 ----------
-FPBrandColors is a simple category on UIColor & NSColor which provides you some of the Brand colors used throughout.
+FPBrandColors is a simple category on UIColor which provides you some of the Brand colors used throughout.
 
 ## Preview
 
@@ -13,9 +13,9 @@ FPBrandColors is a simple category on UIColor & NSColor which provides you some 
 
 ## Installation
 
-Drag the included <code>FPBrandColor.h</code> and <code>FPBrandColor.m</code> files into your project. They are located in the top-level directory. You can see a demo of how to use these with the included Xcode project as well.
+Drag the included <code>UIColor+FPBrandColor.h</code> and <code>UIColor+FPBrandColor.m</code> files into your project. They are located in the top-level directory. You can see a demo of how to use these with the included Xcode project as well.
 
-<code>#import "FPBrandColor.h"</code> into the classes you want to use this category in and you're all set.
+<code>#import "UIColor+FPBrandColor.h"</code> into the classes you want to use this category in and you're all set.
 
 Cocoapods
 -------
@@ -30,183 +30,184 @@ Add this to your podfile to add the UIColor+FPBrandColor category to your projec
 Usage
 ----------
 
-Usage is really simple. Just include `FPBrandColor.h` & `FPBrandColor.m` in your project if you're not using cocoapods and import the header file you need the colors.
+Usage is really simple. Just include `UIColor+FPBrandColor.h` & `UIColor+FPBrandColor.m` in your project if you're not using cocoapods and import the header file you need the colors.
 
-    #import "FPBrandColor.h"
+    #import "UIColor+FPBrandColor.h"
 
 Example
 --------------
 
 ```Obj-C
 
-textLabel.textColor = [FPBrandColor Facebook];
+textLabel.textColor = [UIColor Facebook];
+self.navigationController.navigationBar.barTintColor = [UIColor Instagram];
 ```
 
 Color List
 ----------
 
-    + (FPSystemColor *) Fourormat;
-    + (FPSystemColor *) FiveHundredPX;
-    + (FPSystemColor *) AboutMeBlue;
-    + (FPSystemColor *) AboutMeYellow;
-    + (FPSystemColor *) Addvocate;
-    + (FPSystemColor *) Adobe;
-    + (FPSystemColor *) Aim;
-    + (FPSystemColor *) Amazon;
-    + (FPSystemColor *) Android;
-    + (FPSystemColor *) Asana;
-    + (FPSystemColor *) Atlassian;
-    + (FPSystemColor *) Behance;
-    + (FPSystemColor *) bitly;
-    + (FPSystemColor *) Blogger;
-    + (FPSystemColor *) Carbonmade;
-    + (FPSystemColor *) Cheddar;
-    + (FPSystemColor *) CocaCola;
-    + (FPSystemColor *) CodeSchool;
-    + (FPSystemColor *) Delicious;
-    + (FPSystemColor *) Dell;
-    + (FPSystemColor *) Designmoo;
-    + (FPSystemColor *) Deviantart;
-    + (FPSystemColor *) DesignerNews;
-    + (FPSystemColor *) Dewalt;
-    + (FPSystemColor *) DisqusBlue;
-    + (FPSystemColor *) DisqusOrange;
-    + (FPSystemColor *) Dribbble;
-    + (FPSystemColor *) Dropbox;
-    + (FPSystemColor *) Drupal;
-    + (FPSystemColor *) Dunked;
-    + (FPSystemColor *) eBay;
-    + (FPSystemColor *) Ember;
-    + (FPSystemColor *) Engadget;
-    + (FPSystemColor *) Envato;
-    + (FPSystemColor *) Etsy;
-    + (FPSystemColor *) Evernote;
-    + (FPSystemColor *) Fab;
-    + (FPSystemColor *) Facebook;
-    + (FPSystemColor *) Firefox;
-    + (FPSystemColor *) FlickrBlue;
-    + (FPSystemColor *) FlickrPink;
-    + (FPSystemColor *) Forrst;
-    + (FPSystemColor *) Foursquare;
-    + (FPSystemColor *) Garmin;
-    + (FPSystemColor *) GetGlue;
-    + (FPSystemColor *) Gimmebar;
-    + (FPSystemColor *) GitHub;
-    + (FPSystemColor *) GoogleBlue;
-    + (FPSystemColor *) GoogleGreen;
-    + (FPSystemColor *) GoogleRed;
-    + (FPSystemColor *) GoogleYellow;
-    + (FPSystemColor *) GooglePlus;
-    + (FPSystemColor *) Grooveshark;
-    + (FPSystemColor *) Groupon;
-    + (FPSystemColor *) HackerNews;
-    + (FPSystemColor *) HelloWallet;
-    + (FPSystemColor *) HerokuLight;
-    + (FPSystemColor *) HerokuDark;
-    + (FPSystemColor *) HootSuite;
-    + (FPSystemColor *) Houzz;
-    + (FPSystemColor *) HP;
-    + (FPSystemColor *) HTML5;
-    + (FPSystemColor *) Hulu;
-    + (FPSystemColor *) IBM;
-    + (FPSystemColor *) IKEA;
-    + (FPSystemColor *) IMDb;
-    + (FPSystemColor *) Instagram;
-    + (FPSystemColor *) Instapaper;
-    + (FPSystemColor *) Intel;
-    + (FPSystemColor *) Intuit;
-    + (FPSystemColor *) Kickstarter;
-    + (FPSystemColor *) kippt;
-    + (FPSystemColor *) Kodery;
-    + (FPSystemColor *) LastFM;
-    + (FPSystemColor *) LinkedIn;
-    + (FPSystemColor *) Livestream;
-    + (FPSystemColor *) Lumo;
-    + (FPSystemColor *) MakitaRed;
-    + (FPSystemColor *) MakitaBlue;
-    + (FPSystemColor *) Mixpanel;
-    + (FPSystemColor *) Meetup;
-    + (FPSystemColor *) Netflix;
-    + (FPSystemColor *) Nokia;
-    + (FPSystemColor *) NVIDIA;
-    + (FPSystemColor *) Odnoklassniki;
-    + (FPSystemColor *) Opera;
-    + (FPSystemColor *) Path;
-    + (FPSystemColor *) PayPalDark;
-    + (FPSystemColor *) PayPalLight;
-    + (FPSystemColor *) Pinboard;
-    + (FPSystemColor *) Pinterest;
-    + (FPSystemColor *) PlayStation;
-    + (FPSystemColor *) Pocket;
-    + (FPSystemColor *) Prezi;
-    + (FPSystemColor *) Pusha;
-    + (FPSystemColor *) Quora;
-    + (FPSystemColor *) QuoteFm;
-    + (FPSystemColor *) Rdio;
-    + (FPSystemColor *) Readability;
-    + (FPSystemColor *) RedHat;
-    + (FPSystemColor *) RedditBlue;
-    + (FPSystemColor *) RedditOrange;
-    + (FPSystemColor *) Resource;
-    + (FPSystemColor *) Rockpack;
-    + (FPSystemColor *) Roon;
-    + (FPSystemColor *) RSS;
-    + (FPSystemColor *) Salesforce;
-    + (FPSystemColor *) Samsung;
-    + (FPSystemColor *) Shopify;
-    + (FPSystemColor *) Skype;
-    + (FPSystemColor *) SmashingMagazine;
-    + (FPSystemColor *) Snagajob;
-    + (FPSystemColor *) Softonic;
-    + (FPSystemColor *) SoundCloud;
-    + (FPSystemColor *) SpaceBox;
-    + (FPSystemColor *) Spotify;
-    + (FPSystemColor *) Sprint;
-    + (FPSystemColor *) Squarespace;
-    + (FPSystemColor *) StackOverflow;
-    + (FPSystemColor *) Staples;
-    + (FPSystemColor *) StatusChart;
-    + (FPSystemColor *) Stripe;
-    + (FPSystemColor *) StudyBlue;
-    + (FPSystemColor *) StumbleUpon;
-    + (FPSystemColor *) TMobile;
-    + (FPSystemColor *) Technorati;
-    + (FPSystemColor *) TheNextWeb;
-    + (FPSystemColor *) Treehouse;
-    + (FPSystemColor *) Trello;
-    + (FPSystemColor *) Trulia;
-    + (FPSystemColor *) Tumblr;
-    + (FPSystemColor *) TwitchTv;
-    + (FPSystemColor *) Twitter;
-    + (FPSystemColor *) Typekit;
-    + (FPSystemColor *) TYPO3;
-    + (FPSystemColor *) Ubuntu;
-    + (FPSystemColor *) Ustream;
-    + (FPSystemColor *) uTorrent;
-    + (FPSystemColor *) Venmo;
-    + (FPSystemColor *) Verizon;
-    + (FPSystemColor *) Vimeo;
-    + (FPSystemColor *) Windows;
-    + (FPSystemColor *) WindowsPhone;
-    + (FPSystemColor *) Vine;
-    + (FPSystemColor *) Virb;
-    + (FPSystemColor *) VirginMedia;
-    + (FPSystemColor *) VKontakte;
-    + (FPSystemColor *) Wooga;
-    + (FPSystemColor *) WordPressBlue;
-    + (FPSystemColor *) WordPressOrange;
-    + (FPSystemColor *) WordPressGrey;
-    + (FPSystemColor *) Wunderlist;
-    + (FPSystemColor *) XBOX;
-    + (FPSystemColor *) XING;
-    + (FPSystemColor *) Yahoo;
-    + (FPSystemColor *) Yandex;
-    + (FPSystemColor *) Yelp;
-    + (FPSystemColor *) YouTube;
-    + (FPSystemColor *) Zalongo;
-    + (FPSystemColor *) Zendesk;
-    + (FPSystemColor *) Zerply;
-    + (FPSystemColor *) Zootool;
+    + (UIColor *) Fourormat;
+    + (UIColor *) FiveHundredPX;
+    + (UIColor *) AboutMeBlue;
+    + (UIColor *) AboutMeYellow;
+    + (UIColor *) Addvocate;
+    + (UIColor *) Adobe;
+    + (UIColor *) Aim;
+    + (UIColor *) Amazon;
+    + (UIColor *) Android;
+    + (UIColor *) Asana;
+    + (UIColor *) Atlassian;
+    + (UIColor *) Behance;
+    + (UIColor *) bitly;
+    + (UIColor *) Blogger;
+    + (UIColor *) Carbonmade;
+    + (UIColor *) Cheddar;
+    + (UIColor *) CocaCola;
+    + (UIColor *) CodeSchool;
+    + (UIColor *) Delicious;
+    + (UIColor *) Dell;
+    + (UIColor *) Designmoo;
+    + (UIColor *) Deviantart;
+    + (UIColor *) DesignerNews;
+    + (UIColor *) Dewalt;
+    + (UIColor *) DisqusBlue;
+    + (UIColor *) DisqusOrange;
+    + (UIColor *) Dribbble;
+    + (UIColor *) Dropbox;
+    + (UIColor *) Drupal;
+    + (UIColor *) Dunked;
+    + (UIColor *) eBay;
+    + (UIColor *) Ember;
+    + (UIColor *) Engadget;
+    + (UIColor *) Envato;
+    + (UIColor *) Etsy;
+    + (UIColor *) Evernote;
+    + (UIColor *) Fab;
+    + (UIColor *) Facebook;
+    + (UIColor *) Firefox;
+    + (UIColor *) FlickrBlue;
+    + (UIColor *) FlickrPink;
+    + (UIColor *) Forrst;
+    + (UIColor *) Foursquare;
+    + (UIColor *) Garmin;
+    + (UIColor *) GetGlue;
+    + (UIColor *) Gimmebar;
+    + (UIColor *) GitHub;
+    + (UIColor *) GoogleBlue;
+    + (UIColor *) GoogleGreen;
+    + (UIColor *) GoogleRed;
+    + (UIColor *) GoogleYellow;
+    + (UIColor *) GooglePlus;
+    + (UIColor *) Grooveshark;
+    + (UIColor *) Groupon;
+    + (UIColor *) HackerNews;
+    + (UIColor *) HelloWallet;
+    + (UIColor *) HerokuLight;
+    + (UIColor *) HerokuDark;
+    + (UIColor *) HootSuite;
+    + (UIColor *) Houzz;
+    + (UIColor *) HP;
+    + (UIColor *) HTML5;
+    + (UIColor *) Hulu;
+    + (UIColor *) IBM;
+    + (UIColor *) IKEA;
+    + (UIColor *) IMDb;
+    + (UIColor *) Instagram;
+    + (UIColor *) Instapaper;
+    + (UIColor *) Intel;
+    + (UIColor *) Intuit;
+    + (UIColor *) Kickstarter;
+    + (UIColor *) kippt;
+    + (UIColor *) Kodery;
+    + (UIColor *) LastFM;
+    + (UIColor *) LinkedIn;
+    + (UIColor *) Livestream;
+    + (UIColor *) Lumo;
+    + (UIColor *) MakitaRed;
+    + (UIColor *) MakitaBlue;
+    + (UIColor *) Mixpanel;
+    + (UIColor *) Meetup;
+    + (UIColor *) Netflix;
+    + (UIColor *) Nokia;
+    + (UIColor *) NVIDIA;
+    + (UIColor *) Odnoklassniki;
+    + (UIColor *) Opera;
+    + (UIColor *) Path;
+    + (UIColor *) PayPalDark;
+    + (UIColor *) PayPalLight;
+    + (UIColor *) Pinboard;
+    + (UIColor *) Pinterest;
+    + (UIColor *) PlayStation;
+    + (UIColor *) Pocket;
+    + (UIColor *) Prezi;
+    + (UIColor *) Pusha;
+    + (UIColor *) Quora;
+    + (UIColor *) QuoteFm;
+    + (UIColor *) Rdio;
+    + (UIColor *) Readability;
+    + (UIColor *) RedHat;
+    + (UIColor *) RedditBlue;
+    + (UIColor *) RedditOrange;
+    + (UIColor *) Resource;
+    + (UIColor *) Rockpack;
+    + (UIColor *) Roon;
+    + (UIColor *) RSS;
+    + (UIColor *) Salesforce;
+    + (UIColor *) Samsung;
+    + (UIColor *) Shopify;
+    + (UIColor *) Skype;
+    + (UIColor *) SmashingMagazine;
+    + (UIColor *) Snagajob;
+    + (UIColor *) Softonic;
+    + (UIColor *) SoundCloud;
+    + (UIColor *) SpaceBox;
+    + (UIColor *) Spotify;
+    + (UIColor *) Sprint;
+    + (UIColor *) Squarespace;
+    + (UIColor *) StackOverflow;
+    + (UIColor *) Staples;
+    + (UIColor *) StatusChart;
+    + (UIColor *) Stripe;
+    + (UIColor *) StudyBlue;
+    + (UIColor *) StumbleUpon;
+    + (UIColor *) TMobile;
+    + (UIColor *) Technorati;
+    + (UIColor *) TheNextWeb;
+    + (UIColor *) Treehouse;
+    + (UIColor *) Trello;
+    + (UIColor *) Trulia;
+    + (UIColor *) Tumblr;
+    + (UIColor *) TwitchTv;
+    + (UIColor *) Twitter;
+    + (UIColor *) Typekit;
+    + (UIColor *) TYPO3;
+    + (UIColor *) Ubuntu;
+    + (UIColor *) Ustream;
+    + (UIColor *) uTorrent;
+    + (UIColor *) Venmo;
+    + (UIColor *) Verizon;
+    + (UIColor *) Vimeo;
+    + (UIColor *) Windows;
+    + (UIColor *) WindowsPhone;
+    + (UIColor *) Vine;
+    + (UIColor *) Virb;
+    + (UIColor *) VirginMedia;
+    + (UIColor *) VKontakte;
+    + (UIColor *) Wooga;
+    + (UIColor *) WordPressBlue;
+    + (UIColor *) WordPressOrange;
+    + (UIColor *) WordPressGrey;
+    + (UIColor *) Wunderlist;
+    + (UIColor *) XBOX;
+    + (UIColor *) XING;
+    + (UIColor *) Yahoo;
+    + (UIColor *) Yandex;
+    + (UIColor *) Yelp;
+    + (UIColor *) YouTube;
+    + (UIColor *) Zalongo;
+    + (UIColor *) Zendesk;
+    + (UIColor *) Zerply;
+    + (UIColor *) Zootool;
 
 
 Reap What I Sow!
@@ -216,7 +217,8 @@ This project is distributed under the standard MIT License. Please use this and 
 
 ## Credits
 
-[Faprica LTD](https://www.faprica.com)
+[Faprica LTD](http://www.faprica.com)
+[Melih Buyukbayram](http://twitter.com/melihbuyuk)
 
 ## New Brand Color
 If you wish to suggest a new brand, report a bug, or pitch a new feature idea for Brand Colors. Please create an issue and I'll get back to you as soon as possible.
