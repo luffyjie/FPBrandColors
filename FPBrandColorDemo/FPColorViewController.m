@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Faprica LTD. All rights reserved.
 //
 
-#import "UIColor+FPBrandColor.h"
+#import "FPBrandColor.h"
 
 #import "FPColorViewController.h"
 #import "FPColorCell.h"
@@ -84,111 +84,111 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0){
-        cell.backgroundColor = [UIColor Fourormat];
+        cell.backgroundColor = [FPBrandColor Fourormat];
     } else if (indexPath.row == 1) {
-        cell.backgroundColor = [UIColor FiveHundredPX];
+        cell.backgroundColor = [FPBrandColor FiveHundredPX];
     } else if (indexPath.row == 2) {
-        cell.backgroundColor = [UIColor AboutMeBlue];
+        cell.backgroundColor = [FPBrandColor AboutMeBlue];
     } else if (indexPath.row == 3) {
-        cell.backgroundColor = [UIColor AboutMeYellow];
+        cell.backgroundColor = [FPBrandColor AboutMeYellow];
     } else if (indexPath.row == 4) {
-        cell.backgroundColor = [UIColor Addvocate];
+        cell.backgroundColor = [FPBrandColor Addvocate];
     } else if (indexPath.row == 5) {
-        cell.backgroundColor = [UIColor Adobe];
+        cell.backgroundColor = [FPBrandColor Adobe];
     } else if (indexPath.row == 6) {
-        cell.backgroundColor = [UIColor Aim];
+        cell.backgroundColor = [FPBrandColor Aim];
     } else if (indexPath.row == 7) {
-        cell.backgroundColor = [UIColor Amazon];
+        cell.backgroundColor = [FPBrandColor Amazon];
     } else if (indexPath.row == 8) {
-        cell.backgroundColor = [UIColor Android];
+        cell.backgroundColor = [FPBrandColor Android];
     } else if (indexPath.row == 9) {
-        cell.backgroundColor = [UIColor Asana];
+        cell.backgroundColor = [FPBrandColor Asana];
     } else if (indexPath.row == 10) {
-        cell.backgroundColor = [UIColor Atlassian];
+        cell.backgroundColor = [FPBrandColor Atlassian];
     } else if (indexPath.row == 11) {
-        cell.backgroundColor = [UIColor Behance];
+        cell.backgroundColor = [FPBrandColor Behance];
     } else if (indexPath.row == 12) {
-        cell.backgroundColor = [UIColor bitly];
+        cell.backgroundColor = [FPBrandColor bitly];
     } else if (indexPath.row == 13) {
-        cell.backgroundColor = [UIColor Blogger];
+        cell.backgroundColor = [FPBrandColor Blogger];
     } else if (indexPath.row == 14) {
-        cell.backgroundColor = [UIColor Carbonmade];
+        cell.backgroundColor = [FPBrandColor Carbonmade];
     } else if (indexPath.row == 15) {
-        cell.backgroundColor = [UIColor Cheddar];
+        cell.backgroundColor = [FPBrandColor Cheddar];
     } else if (indexPath.row == 16) {
-        cell.backgroundColor = [UIColor CocaCola];
+        cell.backgroundColor = [FPBrandColor CocaCola];
     } else if (indexPath.row == 17) {
-        cell.backgroundColor = [UIColor CodeSchool];
+        cell.backgroundColor = [FPBrandColor CodeSchool];
     } else if (indexPath.row == 18) {
-        cell.backgroundColor = [UIColor Delicious];
+        cell.backgroundColor = [FPBrandColor Delicious];
     } else if (indexPath.row == 19) {
-        cell.backgroundColor = [UIColor Dell];
+        cell.backgroundColor = [FPBrandColor Dell];
     } else if (indexPath.row == 20) {
-        cell.backgroundColor = [UIColor Designmoo];
+        cell.backgroundColor = [FPBrandColor Designmoo];
     } else if (indexPath.row == 21) {
-        cell.backgroundColor = [UIColor Deviantart];
+        cell.backgroundColor = [FPBrandColor Deviantart];
     } else if (indexPath.row == 22) {
-        cell.backgroundColor = [UIColor DesignerNews];
+        cell.backgroundColor = [FPBrandColor DesignerNews];
     } else if (indexPath.row == 23) {
-        cell.backgroundColor = [UIColor Dewalt];
+        cell.backgroundColor = [FPBrandColor Dewalt];
     } else if (indexPath.row == 24) {
-        cell.backgroundColor = [UIColor DisqusBlue];
+        cell.backgroundColor = [FPBrandColor DisqusBlue];
     } else if (indexPath.row == 25) {
-        cell.backgroundColor = [UIColor DisqusOrange];
+        cell.backgroundColor = [FPBrandColor DisqusOrange];
     } else if (indexPath.row == 26) {
-        cell.backgroundColor = [UIColor Dribbble];
+        cell.backgroundColor = [FPBrandColor Dribbble];
     } else if (indexPath.row == 27) {
-        cell.backgroundColor = [UIColor Dropbox];
+        cell.backgroundColor = [FPBrandColor Dropbox];
     } else if (indexPath.row == 28) {
-        cell.backgroundColor = [UIColor Drupal];
+        cell.backgroundColor = [FPBrandColor Drupal];
     } else if (indexPath.row == 29) {
-        cell.backgroundColor = [UIColor Dunked];
+        cell.backgroundColor = [FPBrandColor Dunked];
     } else if (indexPath.row == 30) {
-        cell.backgroundColor = [UIColor eBay];
+        cell.backgroundColor = [FPBrandColor eBay];
     } else if (indexPath.row == 31) {
-        cell.backgroundColor = [UIColor Ember];
+        cell.backgroundColor = [FPBrandColor Ember];
     } else if (indexPath.row == 32) {
-        cell.backgroundColor = [UIColor Engadget];
+        cell.backgroundColor = [FPBrandColor Engadget];
     } else if (indexPath.row == 33) {
-        cell.backgroundColor = [UIColor Envato];
+        cell.backgroundColor = [FPBrandColor Envato];
     } else if (indexPath.row == 34) {
-        cell.backgroundColor = [UIColor Etsy];
+        cell.backgroundColor = [FPBrandColor Etsy];
     } else if (indexPath.row == 35) {
-        cell.backgroundColor = [UIColor Evernote];
+        cell.backgroundColor = [FPBrandColor Evernote];
     } else if (indexPath.row == 36) {
-        cell.backgroundColor = [UIColor Fab];
+        cell.backgroundColor = [FPBrandColor Fab];
     } else if (indexPath.row == 37) {
-        cell.backgroundColor = [UIColor Facebook];
+        cell.backgroundColor = [FPBrandColor Facebook];
     } else if (indexPath.row == 38) {
-        cell.backgroundColor = [UIColor Firefox];
+        cell.backgroundColor = [FPBrandColor Firefox];
     } else if (indexPath.row == 39) {
-        cell.backgroundColor = [UIColor FlickrBlue];
+        cell.backgroundColor = [FPBrandColor FlickrBlue];
     } else if (indexPath.row == 40) {
-        cell.backgroundColor = [UIColor FlickrPink];
+        cell.backgroundColor = [FPBrandColor FlickrPink];
     } else if (indexPath.row == 41) {
-        cell.backgroundColor = [UIColor Forrst];
+        cell.backgroundColor = [FPBrandColor Forrst];
     } else if (indexPath.row == 42) {
-        cell.backgroundColor = [UIColor Foursquare];
+        cell.backgroundColor = [FPBrandColor Foursquare];
     } else if (indexPath.row == 43) {
-        cell.backgroundColor = [UIColor Garmin];
+        cell.backgroundColor = [FPBrandColor Garmin];
     } else if (indexPath.row == 44) {
-        cell.backgroundColor = [UIColor GetGlue];
+        cell.backgroundColor = [FPBrandColor GetGlue];
     } else if (indexPath.row == 45) {
-        cell.backgroundColor = [UIColor Gimmebar];
+        cell.backgroundColor = [FPBrandColor Gimmebar];
     } else if (indexPath.row == 46) {
-        cell.backgroundColor = [UIColor GitHub];
+        cell.backgroundColor = [FPBrandColor GitHub];
     } else if (indexPath.row == 47) {
-        cell.backgroundColor = [UIColor GoogleBlue];
+        cell.backgroundColor = [FPBrandColor GoogleBlue];
     } else if (indexPath.row == 48) {
-        cell.backgroundColor = [UIColor GoogleGreen];
+        cell.backgroundColor = [FPBrandColor GoogleGreen];
     } else if (indexPath.row == 49) {
-        cell.backgroundColor = [UIColor GoogleRed];
+        cell.backgroundColor = [FPBrandColor GoogleRed];
     } else if (indexPath.row == 50) {
-        cell.backgroundColor = [UIColor GoogleYellow];
+        cell.backgroundColor = [FPBrandColor GoogleYellow];
     } else if (indexPath.row == 51) {
-        cell.backgroundColor = [UIColor GooglePlus];
+        cell.backgroundColor = [FPBrandColor GooglePlus];
     } else if (indexPath.row == 52) {
-        cell.backgroundColor = [UIColor Grooveshark];
+        cell.backgroundColor = [FPBrandColor Grooveshark];
     }
     
     

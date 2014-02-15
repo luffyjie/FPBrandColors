@@ -19,7 +19,6 @@
 		810FDE2A1894F8F800E82F35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810FDE0C1894F8F700E82F35 /* UIKit.framework */; };
 		810FDE321894F8F800E82F35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 810FDE301894F8F800E82F35 /* InfoPlist.strings */; };
 		810FDE341894F8F800E82F35 /* FPBrandColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 810FDE331894F8F800E82F35 /* FPBrandColorTests.m */; };
-		810FDE401894F9B400E82F35 /* UIColor+FPBrandColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 810FDE3F1894F9B400E82F35 /* UIColor+FPBrandColor.m */; };
 		810FDE431894FF8700E82F35 /* FPColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810FDE421894FF8700E82F35 /* FPColorViewController.m */; };
 		810FDE46189503AC00E82F35 /* FPColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 810FDE45189503AC00E82F35 /* FPColorCell.m */; };
 		810FDE481895073D00E82F35 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810FDE471895073D00E82F35 /* QuartzCore.framework */; };
@@ -28,6 +27,7 @@
 		810FDE521895315900E82F35 /* brandLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 810FDE501895315900E82F35 /* brandLogo@2x.png */; };
 		810FDE531895315900E82F35 /* brandLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 810FDE511895315900E82F35 /* brandLogo.png */; };
 		810FDE571895567000E82F35 /* FPBrandColor.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 810FDE561895567000E82F35 /* FPBrandColor.podspec */; };
+		C997A0E318AEA4040045D1B5 /* FPBrandColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C997A0E218AEA4040045D1B5 /* FPBrandColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +57,6 @@
 		810FDE2F1894F8F800E82F35 /* FPBrandColorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FPBrandColorTests-Info.plist"; sourceTree = "<group>"; };
 		810FDE311894F8F800E82F35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		810FDE331894F8F800E82F35 /* FPBrandColorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPBrandColorTests.m; sourceTree = "<group>"; };
-		810FDE3E1894F9B400E82F35 /* UIColor+FPBrandColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FPBrandColor.h"; sourceTree = "<group>"; };
-		810FDE3F1894F9B400E82F35 /* UIColor+FPBrandColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FPBrandColor.m"; sourceTree = "<group>"; };
 		810FDE411894FF8700E82F35 /* FPColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPColorViewController.h; sourceTree = "<group>"; };
 		810FDE421894FF8700E82F35 /* FPColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPColorViewController.m; sourceTree = "<group>"; };
 		810FDE44189503AC00E82F35 /* FPColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPColorCell.h; sourceTree = "<group>"; };
@@ -71,6 +69,8 @@
 		810FDE501895315900E82F35 /* brandLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brandLogo@2x.png"; sourceTree = "<group>"; };
 		810FDE511895315900E82F35 /* brandLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brandLogo.png; sourceTree = "<group>"; };
 		810FDE561895567000E82F35 /* FPBrandColor.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FPBrandColor.podspec; sourceTree = "<group>"; };
+		C997A0E118AEA4040045D1B5 /* FPBrandColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPBrandColor.h; sourceTree = "<group>"; };
+		C997A0E218AEA4040045D1B5 /* FPBrandColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPBrandColor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,8 +181,8 @@
 		810FDE3D1894F97500E82F35 /* FPBrandColor */ = {
 			isa = PBXGroup;
 			children = (
-				810FDE3E1894F9B400E82F35 /* UIColor+FPBrandColor.h */,
-				810FDE3F1894F9B400E82F35 /* UIColor+FPBrandColor.m */,
+				C997A0E118AEA4040045D1B5 /* FPBrandColor.h */,
+				C997A0E218AEA4040045D1B5 /* FPBrandColor.m */,
 			);
 			path = FPBrandColor;
 			sourceTree = "<group>";
@@ -300,9 +300,9 @@
 			files = (
 				810FDE4F18952DAF00E82F35 /* CRNavigationController.m in Sources */,
 				810FDE191894F8F700E82F35 /* FPAppDelegate.m in Sources */,
-				810FDE401894F9B400E82F35 /* UIColor+FPBrandColor.m in Sources */,
 				810FDE4E18952DAF00E82F35 /* CRNavigationBar.m in Sources */,
 				810FDE46189503AC00E82F35 /* FPColorCell.m in Sources */,
+				C997A0E318AEA4040045D1B5 /* FPBrandColor.m in Sources */,
 				810FDE431894FF8700E82F35 /* FPColorViewController.m in Sources */,
 				810FDE151894F8F700E82F35 /* main.m in Sources */,
 			);
@@ -505,6 +505,7 @@
 				810FDE391894F8F800E82F35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		810FDE3A1894F8F800E82F35 /* Build configuration list for PBXNativeTarget "FPBrandColorTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +514,7 @@
 				810FDE3C1894F8F800E82F35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
