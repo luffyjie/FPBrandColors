@@ -17,28 +17,34 @@ FPBrandColors is a simple category on UIColor which provides you some of the Bra
 [![](Screenshots/Thumb-06.png)](https://raw.github.com/magtory/FPBrandColors/master/Screenshots/Full-06.png)
 
 
-## Installation
+## Requirements
 
-Drag the included <code>UIColor+FPBrandColor.h</code> and <code>UIColor+FPBrandColor.m</code> files into your project. They are located in the top-level directory. You can see a demo of how to use these with the included Xcode project as well.
+FPBrandColors works on any iOS version and is compatible with both ARC and non-ARC projects. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
 
-<code>#import "UIColor+FPBrandColor.h"</code> into the classes you want to use this category in and you're all set.
+* Foundation.framework
+* UIKit.framework
+* CoreGraphics.framework
 
-Cocoapods
--------
+You will need LLVM 3.0 or later in order to build FPBrandColors. 
 
-CocoaPods are the best way to manage library dependencies in Objective-C projects.
-Learn more at http://cocoapods.org
 
-Add this to your podfile to add the UIColor+FPBrandColor category to your project.
+## Adding FPBrandColors to your project
 
-    pod 'FPBrandColors',  '~> 0.1.3'
+### Cocoapods
 
-Usage
-----------
+[CocoaPods](http://cocoapods.org) is the recommended way to add FPBrandColors to your project.
 
-Usage is really simple. Just include `UIColor+FPBrandColor.h` & `UIColor+FPBrandColor.m` in your project if you're not using cocoapods and import the header file you need the colors.
+1. Add a pod entry for FPBrandColors to your Podfile `pod 'FPBrandColors', '~> 0.1.3'`
+2. Install the pod(s) by running `pod install`.
+3. Include FPBrandColors wherever you need it with `#import "UIColor+FPBrandColor.h"`.
 
-    #import "UIColor+FPBrandColor.h"
+### Source files
+
+Alternatively you can directly add the `UIColor+FPBrandColor.h` and `UIColor+FPBrandColor.m` source files to your project.
+
+1. Download the [latest code version](https://github.com/magtory/FPBrandColors/archive/master.zip) or add the repository as a git submodule to your git-tracked project. 
+2. Open your project in Xcode, then drag and drop `UIColor+FPBrandColor.h` and `UIColor+FPBrandColor.m` onto your project (use the "Product Navigator view"). Make sure to select Copy items when asked if you extracted the code archive outside of your project. 
+3. Include FPBrandColor wherever you need it with `#import "UIColor+FPBrandColor.h"`.
 
 Example
 --------------
@@ -46,6 +52,7 @@ Example
 ```Obj-C
 
 textLabel.textColor = [UIColor Facebook];
+ 
 self.navigationController.navigationBar.barTintColor = [UIColor Instagram];
 ```
 
