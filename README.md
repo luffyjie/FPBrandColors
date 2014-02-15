@@ -9,7 +9,13 @@ FPBrandColors is a simple category on UIColor which provides you some of the Bra
 
 ## Preview
 
-![ScreenShot](Screenshots/colorSC.PNG)
+[![](Screenshots/Thumb-01.png)](https://raw.github.com/magtory/FPBrandColors/master/Screenshots/Full-01.png)
+[![](Screenshots/Thumb-02.png)](https://raw.github.com/magtory/FPBrandColors/master/Screenshots/Full-02.png)
+[![](Screenshots/Thumb-03.png)](https://raw.github.com/magtory/FPBrandColors/master/Screenshots/Full-03.png)
+[![](Screenshots/Thumb-04.png)](https://raw.github.com/magtory/FPBrandColors/master/Screenshots/Full-04.png)
+[![](Screenshots/Thumb-05.png)](https://raw.github.com/magtory/FPBrandColors/master/Screenshots/Full-05.png)
+[![](Screenshots/Thumb-06.png)](https://raw.github.com/magtory/FPBrandColors/master/Screenshots/Full-06.png)
+
 
 ## Installation
 
