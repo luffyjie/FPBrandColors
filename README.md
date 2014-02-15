@@ -230,8 +230,8 @@ This project is distributed under the standard MIT License. Please use this and 
 
 ## Credits
 
-[Faprica LTD](http://www.faprica.com)
-[Melih Buyukbayram](http://twitter.com/melihbuyuk)
+- [Faprica LTD](http://www.faprica.com)
+- [Melih Buyukbayram](http://twitter.com/melihbuyuk)
 
 ## New Brand Color
 If you wish to suggest a new brand, report a bug, or pitch a new feature idea for Brand Colors. Please create an issue and I'll get back to you as soon as possible.
