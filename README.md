@@ -1,11 +1,11 @@
 FPBrandColors
 =============
 
-A category for UIColor a collection of major brand color codes
+A category for UIColor & NSColor a collection of major brand color codes
 
 About
 ----------
-FPBrandColors is a simple category on UIColor which provides you some of the Brand colors used throughout.
+FPBrandColors is a simple category on UIColor & NSColor which provides you some of the Brand colors used throughout.
 
 ## Preview
 
@@ -13,9 +13,9 @@ FPBrandColors is a simple category on UIColor which provides you some of the Bra
 
 ## Installation
 
-Drag the included <code>UIColor+FPBrandColor.h</code> and <code>UIColor+FPBrandColor.m</code> files into your project. They are located in the top-level directory. You can see a demo of how to use these with the included Xcode project as well.
+Drag the included <code>FPBrandColor.h</code> and <code>FPBrandColor.m</code> files into your project. They are located in the top-level directory. You can see a demo of how to use these with the included Xcode project as well.
 
-<code>#import "UIColor+FPBrandColor.h"</code> into the classes you want to use this category in and you're all set.
+<code>#import "FPBrandColor.h"</code> into the classes you want to use this category in and you're all set.
 
 Cocoapods
 -------
@@ -30,16 +30,16 @@ Add this to your podfile to add the UIColor+FPBrandColor category to your projec
 Usage
 ----------
 
-Usage is really simple. Just include `UIColor+FPBrandColor.h` & `UIColor+FPBrandColor.m` in your project if you're not using cocoapods and import the header file you need the colors.
+Usage is really simple. Just include `FPBrandColor.h` & `FPBrandColor.m` in your project if you're not using cocoapods and import the header file you need the colors.
 
-    #import "UIColor+FPBrandColor.h"
+    #import "FPBrandColor.h"
 
 Example
 --------------
 
 ```Obj-C
 
-textLabel.textColor = [UIColor Facebook];
+textLabel.textColor = [FPBrandColor Facebook];
 ```
 
 Color List
