@@ -1,11 +1,11 @@
 FPBrandColors
 =============
 
-A category for UIColor a collection of major brand color codes
+A category for UIColor & NSColor a collection of major brand color codes
 
 About
 ----------
-FPBrandColors is a simple category on UIColor which provides you some of the Brand colors used throughout.
+FPBrandColors is a simple category on UIColor & NSColor which provides you some of the Brand colors used throughout.
 
 ## Preview
 
@@ -19,7 +19,7 @@ FPBrandColors is a simple category on UIColor which provides you some of the Bra
 
 ## Requirements
 
-FPBrandColors works on any iOS version and is compatible with both ARC and non-ARC projects. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
+FPBrandColors works on any iOS & OSX version and is compatible with both ARC and non-ARC projects. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
 
 * Foundation.framework
 * UIKit.framework
@@ -36,18 +36,20 @@ You will need LLVM 3.0 or later in order to build FPBrandColors.
 
 1. Add a pod entry for FPBrandColors to your Podfile `pod 'FPBrandColors', '~> 0.1.3'`
 2. Install the pod(s) by running `pod install`.
-3. Include FPBrandColors wherever you need it with `#import "UIColor+FPBrandColor.h"`.
+3. Include FPBrandColors wherever you need it with `#import "FPBrandColor.h"`.
 
 ### Source files
 
-Alternatively you can directly add the `UIColor+FPBrandColor.h` and `UIColor+FPBrandColor.m` source files to your project.
+Alternatively you can directly add the `FPBrandColor.h` and `FPBrandColor.m` source files to your project.
 
 1. Download the [latest code version](https://github.com/magtory/FPBrandColors/archive/master.zip) or add the repository as a git submodule to your git-tracked project. 
-2. Open your project in Xcode, then drag and drop `UIColor+FPBrandColor.h` and `UIColor+FPBrandColor.m` onto your project (use the "Product Navigator view"). Make sure to select Copy items when asked if you extracted the code archive outside of your project. 
-3. Include FPBrandColor wherever you need it with `#import "UIColor+FPBrandColor.h"`.
+2. Open your project in Xcode, then drag and drop `FPBrandColor.h` and `FPBrandColor.m` onto your project (use the "Product Navigator view"). Make sure to select Copy items when asked if you extracted the code archive outside of your project. 
+3. Include FPBrandColor wherever you need it with `#import "FPBrandColor.h"`.
 
 Example
 --------------
+
+### IOS Example
 
 ```Obj-C
 
@@ -56,171 +58,177 @@ textLabel.textColor = [UIColor Facebook];
 self.navigationController.navigationBar.barTintColor = [UIColor Instagram];
 ```
 
+### OSX Example
+
+```Obj-C
+    NSColor *color = [NSColor GooglePlus];
+    NSDictionary *attributes = [NSDictionary dictionaryWithObject: color 
+                                                           forKey: NSForegroundColorAttributeName];
+    [text drawAtPoint:point withAttributes:attributes];
+```
+
+
 Color List
 ----------
 
-    + (UIColor *) Fourormat;
-    + (UIColor *) FiveHundredPX;
-    + (UIColor *) AboutMeBlue;
-    + (UIColor *) AboutMeYellow;
-    + (UIColor *) Addvocate;
-    + (UIColor *) Adobe;
-    + (UIColor *) Aim;
-    + (UIColor *) Amazon;
-    + (UIColor *) Android;
-    + (UIColor *) Asana;
-    + (UIColor *) Atlassian;
-    + (UIColor *) Behance;
-    + (UIColor *) bitly;
-    + (UIColor *) Blogger;
-    + (UIColor *) Carbonmade;
-    + (UIColor *) Cheddar;
-    + (UIColor *) CocaCola;
-    + (UIColor *) CodeSchool;
-    + (UIColor *) Delicious;
-    + (UIColor *) Dell;
-    + (UIColor *) Designmoo;
-    + (UIColor *) Deviantart;
-    + (UIColor *) DesignerNews;
-    + (UIColor *) Dewalt;
-    + (UIColor *) DisqusBlue;
-    + (UIColor *) DisqusOrange;
-    + (UIColor *) Dribbble;
-    + (UIColor *) Dropbox;
-    + (UIColor *) Drupal;
-    + (UIColor *) Dunked;
-    + (UIColor *) eBay;
-    + (UIColor *) Ember;
-    + (UIColor *) Engadget;
-    + (UIColor *) Envato;
-    + (UIColor *) Etsy;
-    + (UIColor *) Evernote;
-    + (UIColor *) Fab;
-    + (UIColor *) Facebook;
-    + (UIColor *) Firefox;
-    + (UIColor *) FlickrBlue;
-    + (UIColor *) FlickrPink;
-    + (UIColor *) Forrst;
-    + (UIColor *) Foursquare;
-    + (UIColor *) Garmin;
-    + (UIColor *) GetGlue;
-    + (UIColor *) Gimmebar;
-    + (UIColor *) GitHub;
-    + (UIColor *) GoogleBlue;
-    + (UIColor *) GoogleGreen;
-    + (UIColor *) GoogleRed;
-    + (UIColor *) GoogleYellow;
-    + (UIColor *) GooglePlus;
-    + (UIColor *) Grooveshark;
-    + (UIColor *) Groupon;
-    + (UIColor *) HackerNews;
-    + (UIColor *) HelloWallet;
-    + (UIColor *) HerokuLight;
-    + (UIColor *) HerokuDark;
-    + (UIColor *) HootSuite;
-    + (UIColor *) Houzz;
-    + (UIColor *) HP;
-    + (UIColor *) HTML5;
-    + (UIColor *) Hulu;
-    + (UIColor *) IBM;
-    + (UIColor *) IKEA;
-    + (UIColor *) IMDb;
-    + (UIColor *) Instagram;
-    + (UIColor *) Instapaper;
-    + (UIColor *) Intel;
-    + (UIColor *) Intuit;
-    + (UIColor *) Kickstarter;
-    + (UIColor *) kippt;
-    + (UIColor *) Kodery;
-    + (UIColor *) LastFM;
-    + (UIColor *) LinkedIn;
-    + (UIColor *) Livestream;
-    + (UIColor *) Lumo;
-    + (UIColor *) MakitaRed;
-    + (UIColor *) MakitaBlue;
-    + (UIColor *) Mixpanel;
-    + (UIColor *) Meetup;
-    + (UIColor *) Netflix;
-    + (UIColor *) Nokia;
-    + (UIColor *) NVIDIA;
-    + (UIColor *) Odnoklassniki;
-    + (UIColor *) Opera;
-    + (UIColor *) Path;
-    + (UIColor *) PayPalDark;
-    + (UIColor *) PayPalLight;
-    + (UIColor *) Pinboard;
-    + (UIColor *) Pinterest;
-    + (UIColor *) PlayStation;
-    + (UIColor *) Pocket;
-    + (UIColor *) Prezi;
-    + (UIColor *) Pusha;
-    + (UIColor *) Quora;
-    + (UIColor *) QuoteFm;
-    + (UIColor *) Rdio;
-    + (UIColor *) Readability;
-    + (UIColor *) RedHat;
-    + (UIColor *) RedditBlue;
-    + (UIColor *) RedditOrange;
-    + (UIColor *) Resource;
-    + (UIColor *) Rockpack;
-    + (UIColor *) Roon;
-    + (UIColor *) RSS;
-    + (UIColor *) Salesforce;
-    + (UIColor *) Samsung;
-    + (UIColor *) Shopify;
-    + (UIColor *) Skype;
-    + (UIColor *) SmashingMagazine;
-    + (UIColor *) Snagajob;
-    + (UIColor *) Softonic;
-    + (UIColor *) SoundCloud;
-    + (UIColor *) SpaceBox;
-    + (UIColor *) Spotify;
-    + (UIColor *) Sprint;
-    + (UIColor *) Squarespace;
-    + (UIColor *) StackOverflow;
-    + (UIColor *) Staples;
-    + (UIColor *) StatusChart;
-    + (UIColor *) Stripe;
-    + (UIColor *) StudyBlue;
-    + (UIColor *) StumbleUpon;
-    + (UIColor *) TMobile;
-    + (UIColor *) Technorati;
-    + (UIColor *) TheNextWeb;
-    + (UIColor *) Treehouse;
-    + (UIColor *) Trello;
-    + (UIColor *) Trulia;
-    + (UIColor *) Tumblr;
-    + (UIColor *) TwitchTv;
-    + (UIColor *) Twitter;
-    + (UIColor *) Typekit;
-    + (UIColor *) TYPO3;
-    + (UIColor *) Ubuntu;
-    + (UIColor *) Ustream;
-    + (UIColor *) uTorrent;
-    + (UIColor *) Venmo;
-    + (UIColor *) Verizon;
-    + (UIColor *) Vimeo;
-    + (UIColor *) Windows;
-    + (UIColor *) WindowsPhone;
-    + (UIColor *) Vine;
-    + (UIColor *) Virb;
-    + (UIColor *) VirginMedia;
-    + (UIColor *) VKontakte;
-    + (UIColor *) Wooga;
-    + (UIColor *) WordPressBlue;
-    + (UIColor *) WordPressOrange;
-    + (UIColor *) WordPressGrey;
-    + (UIColor *) Wunderlist;
-    + (UIColor *) XBOX;
-    + (UIColor *) XING;
-    + (UIColor *) Yahoo;
-    + (UIColor *) Yandex;
-    + (UIColor *) Yelp;
-    + (UIColor *) YouTube;
-    + (UIColor *) Zalongo;
-    + (UIColor *) Zendesk;
-    + (UIColor *) Zerply;
-    + (UIColor *) Zootool;
+    + (instancetype) Fourormat;
+    + (instancetype) FiveHundredPX;
+    + (instancetype) AboutMeBlue;
+    + (instancetype) AboutMeYellow;
+    + (instancetype) Addvocate;
+    + (instancetype) Adobe;
+    + (instancetype) Aim;
+    + (instancetype) Amazon;
+    + (instancetype) Android;
+    + (instancetype) Asana;
+    + (instancetype) Atlassian;
+    + (instancetype) Behance;
+    + (instancetype) bitly;
+    + (instancetype) Blogger;
+    + (instancetype) Carbonmade;
+    + (instancetype) Cheddar;
+    + (instancetype) CocaCola;
+    + (instancetype) CodeSchool;
+    + (instancetype) Delicious;
+    + (instancetype) Dell;
+    + (instancetype) Designmoo;
+    + (instancetype) Deviantart;
+    + (instancetype) DesignerNews;
+    + (instancetype) Dewalt;
+    + (instancetype) DisqusBlue;
+    + (instancetype) DisqusOrange;
+    + (instancetype) Dribbble;
+    + (instancetype) Dropbox;
+    + (instancetype) Drupal;
+    + (instancetype) Dunked;
+    + (instancetype) eBay;
+    + (instancetype) Ember;
+    + (instancetype) Engadget;
+    + (instancetype) Envato;
+    + (instancetype) Etsy;
+    + (instancetype) Evernote;
+    + (instancetype) Fab;
+    + (instancetype) Facebook;
+    + (instancetype) Firefox;
+    + (instancetype) FlickrBlue;
+    + (instancetype) FlickrPink;
+    + (instancetype) Forrst;
+    + (instancetype) Foursquare;
+    + (instancetype) Garmin;
+    + (instancetype) GetGlue;
+    + (instancetype) Gimmebar;
+    + (instancetype) GitHub;
+    + (instancetype) GoogleBlue;
+    + (instancetype) GoogleGreen;
+    + (instancetype) GoogleRed;
+    + (instancetype) GoogleYellow;
+    + (instancetype) GooglePlus;
+    + (instancetype) Grooveshark;
+    + (instancetype) Groupon;
+    + (instancetype) HackerNews;
+    + (instancetype) HelloWallet;
+    + (instancetype) HerokuLight;
+    + (instancetype) HerokuDark;
+    + (instancetype) HootSuite;
+    + (instancetype) Houzz;
+    + (instancetype) HP;
+    + (instancetype) HTML5;
+    + (instancetype) Hulu;
+    + (instancetype) IBM;
+    + (instancetype) IKEA;
+    + (instancetype) IMDb;
+    + (instancetype) Instagram;
+    + (instancetype) Instapaper;
+    + (instancetype) Intel;
+    + (instancetype) Intuit;
+    + (instancetype) Kickstarter;
+    + (instancetype) kippt;
+    + (instancetype) Kodery;
+    + (instancetype) LastFM;
+    + (instancetype) LinkedIn;
+    + (instancetype) Livestream;
+    + (instancetype) Lumo;
+    + (instancetype) MakitaRed;
+    + (instancetype) MakitaBlue;
+    + (instancetype) Mixpanel;
+    + (instancetype) Meetup;
+    + (instancetype) Netflix;
+    + (instancetype) Nokia;
+    + (instancetype) NVIDIA;
+    + (instancetype) Odnoklassniki;
+    + (instancetype) Opera;
+    + (instancetype) Path;
+    + (instancetype) PayPalDark;
+    + (instancetype) PayPalLight;
+    + (instancetype) Pinboard;
+    + (instancetype) Pinterest;
+    + (instancetype) PlayStation;
+    + (instancetype) Pocket;
+    + (instancetype) Prezi;
+    + (instancetype) Pusha;
+    + (instancetype) Quora;
+    + (instancetype) QuoteFm;
+    + (instancetype) Rdio;
+    + (instancetype) Readability;
+    + (instancetype) RedHat;
+    + (instancetype) RedditBlue;
+    + (instancetype) RedditOrange;
+    + (instancetype) Resource;
+    + (instancetype) Rockpack;
+    + (instancetype) Roon;
+    + (instancetype) RSS;
+    + (instancetype) Salesforce;
+    + (instancetype) Samsung;
+    + (instancetype) Shopify;
+    + (instancetype) Skype;
+    + (instancetype) SmashingMagazine;
+    + (instancetype) Snagajob;
+    + (instancetype) Softonic;
+    + (instancetype) SoundCloud;
+    + (instancetype) SpaceBox;
+    + (instancetype) Spotify;
+    + (instancetype) Sprint;
+    + (instancetype) Squarespace;
+    + (instancetype) StackOverflow;
+    + (instancetype) Staples;
+    + (instancetype) StatusChart;
+    + (instancetype) Stripe;
+    + (instancetype) StudyBlue;
+    + (instancetype) StumbleUpon;
+    + (instancetype) TMobile;
+    + (instancetype) Technorati;
+    + (instancetype) TheNextWeb;
+    + (instancetype) Treehouse;
+    + (instancetype) Trello;
+    + (instancetype) Trulia;
+    + (instancetype) Tumblr;
+    + (instancetype) TwitchTv;
+    + (instancetype) Twitter;
+    + (instancetype) Typekit;
+    + (instancetype) TYPO3;
+    + (instancetype) Ubuntu;
+    + (instancetype) Ustream;
+    + (instancetype) Verizon;
+    + (instancetype) Vimeo;
+    + (instancetype) Vine;
+    + (instancetype) Virb;
+    + (instancetype) VirginMedia;
+    + (instancetype) VKontakte;
+    + (instancetype) Wooga;
+    + (instancetype) WordPressBlue;
+    + (instancetype) WordPressOrange;
+    + (instancetype) WordPressGrey;
+    + (instancetype) Wunderlist;
+    + (instancetype) XBOX;
+    + (instancetype) XING;
+    + (instancetype) Yahoo;
+    + (instancetype) Yandex;
+    + (instancetype) Yelp;
+    + (instancetype) YouTube;
+    + (instancetype) Zalongo;
+    + (instancetype) Zendesk;
+    + (instancetype) Zerply;
+    + (instancetype) Zootool;
 
 
 Reap What I Sow!

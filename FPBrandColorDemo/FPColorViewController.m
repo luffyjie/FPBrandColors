@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Faprica LTD. All rights reserved.
 //
 
-#import "UIColor+FPBrandColor.h"
+#import "FPBrandColor.h"
 
 #import "FPColorViewController.h"
 #import "FPColorCell.h"

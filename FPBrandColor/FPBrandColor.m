@@ -6,675 +6,683 @@
 //  Copyright (c) 2014 Faprica LTD. All rights reserved.
 //
 
-#import "UIColor+FPBrandColor.h"
+#import "FPBrandColor.h"
 
+#if TARGET_OS_IPHONE
+#import <UIKit/UIKit.h>
 @implementation UIColor (FPBrandColor)
 
-+ (UIColor *)Fourormat
+#elif TARGET_OS_MAC
+#import <AppKit/AppKit.h>
+@implementation NSColor (FPBrandColor)
+
+#endif
+
++ (instancetype)Fourormat
 {
     return UIColorFromRGB(0xfb0a2a);
 }
 
-+ (UIColor *)FiveHundredPX
++ (instancetype)FiveHundredPX
 {
     return UIColorFromRGB(0x02adea);
 }
 
-+ (UIColor *)AboutMeBlue
++ (instancetype)AboutMeBlue
 {
     return UIColorFromRGB(0x00405d);
 }
 
-+ (UIColor *)AboutMeYellow
++ (instancetype)AboutMeYellow
 {
     return UIColorFromRGB(0xffcc33);
 }
 
-+ (UIColor *)Addvocate
++ (instancetype)Addvocate
 {
     return UIColorFromRGB(0xff6138);
 }
 
-+ (UIColor *)Adobe
++ (instancetype)Adobe
 {
     return UIColorFromRGB(0xff0000);
 }
 
-+ (UIColor *)Aim
++ (instancetype)Aim
 {
     return UIColorFromRGB(0xfcd20b);
 }
 
-+ (UIColor *)Amazon
++ (instancetype)Amazon
 {
     return UIColorFromRGB(0xe47911);
 }
 
-+ (UIColor *)Android
++ (instancetype)Android
 {
     return UIColorFromRGB(0xa4c639);
 }
 
-+ (UIColor *)Asana
++ (instancetype)Asana
 {
     return UIColorFromRGB(0x1d8dd5);
 }
 
-+ (UIColor *)Atlassian
++ (instancetype)Atlassian
 {
     return UIColorFromRGB(0x003366);
 }
 
-+ (UIColor *)Behance
++ (instancetype)Behance
 {
     return UIColorFromRGB(0x005cff);
 }
 
-+ (UIColor *)bitly
++ (instancetype)bitly
 {
     return UIColorFromRGB(0xee6123);
 }
 
-+ (UIColor *)Blogger
++ (instancetype)Blogger
 {
     return UIColorFromRGB(0xfc4f08);
 }
 
-+ (UIColor *)Carbonmade
++ (instancetype)Carbonmade
 {
     return UIColorFromRGB(0x613854);
 }
 
-+ (UIColor *)Cheddar
++ (instancetype)Cheddar
 {
     return UIColorFromRGB(0xff7243);
 }
 
-+ (UIColor *)CocaCola
++ (instancetype)CocaCola
 {
     return UIColorFromRGB(0xb50900);
 }
 
-+ (UIColor *)CodeSchool
++ (instancetype)CodeSchool
 {
     return UIColorFromRGB(0x3d4944);
 }
 
-+ (UIColor *)Delicious
++ (instancetype)Delicious
 {
     return UIColorFromRGB(0x205cc0);
 }
 
-+ (UIColor *)Dell
++ (instancetype)Dell
 {
     return UIColorFromRGB(0x3287c1);
 }
 
-+ (UIColor *)Designmoo
++ (instancetype)Designmoo
 {
     return UIColorFromRGB(0xe54a4f);
 }
 
-+ (UIColor *)Deviantart
++ (instancetype)Deviantart
 {
     return UIColorFromRGB(0x4e6252);
 }
 
-+ (UIColor *)DesignerNews
++ (instancetype)DesignerNews
 {
     return UIColorFromRGB(0x2d72da);
 }
 
-+ (UIColor *)Dewalt
++ (instancetype)Dewalt
 {
     return UIColorFromRGB(0xfebd17);
 }
 
-+ (UIColor *)DisqusBlue
++ (instancetype)DisqusBlue
 {
     return UIColorFromRGB(0x59a3fc);
 }
-+ (UIColor *)DisqusOrange
++ (instancetype)DisqusOrange
 {
     return UIColorFromRGB(0xdb7132);
 }
-+ (UIColor *)Dribbble
++ (instancetype)Dribbble
 {
     return UIColorFromRGB(0xea4c89);
 }
 
-+ (UIColor *)Dropbox
++ (instancetype)Dropbox
 {
     return UIColorFromRGB(0x3d9ae8);
 }
 
-+ (UIColor *)Drupal
++ (instancetype)Drupal
 {
     return UIColorFromRGB(0x0c76ab);
 }
 
-+ (UIColor *)Dunked
++ (instancetype)Dunked
 {
     return UIColorFromRGB(0x2a323a);
 }
 
-+ (UIColor *)eBay
++ (instancetype)eBay
 {
     return UIColorFromRGB(0x89c507);
 }
 
-+ (UIColor *)Ember
++ (instancetype)Ember
 {
     return UIColorFromRGB(0xf05e1b);
 }
 
-+ (UIColor *)Engadget
++ (instancetype)Engadget
 {
     return UIColorFromRGB(0x00bdf6);
 }
 
-+ (UIColor *)Envato
++ (instancetype)Envato
 {
     return UIColorFromRGB(0x528036);
 }
 
-+ (UIColor *)Etsy
++ (instancetype)Etsy
 {
     return UIColorFromRGB(0xeb6d20);
 }
-+ (UIColor *)Evernote
++ (instancetype)Evernote
 {
     return UIColorFromRGB(0x5ba525);
 }
-+ (UIColor *)Fab
++ (instancetype)Fab
 {
     return UIColorFromRGB(0xdd0017);
 }
-+ (UIColor *)Facebook
++ (instancetype)Facebook
 {
     return UIColorFromRGB(0x3b5998);
 }
-+ (UIColor *)Firefox
++ (instancetype)Firefox
 {
     return UIColorFromRGB(0xe66000);
 }
-+ (UIColor *)FlickrBlue
++ (instancetype)FlickrBlue
 {
     return UIColorFromRGB(0x0063dc);
 }
-+ (UIColor *)FlickrPink
++ (instancetype)FlickrPink
 {
     return UIColorFromRGB(0xff0084);
 }
-+ (UIColor *)Forrst
++ (instancetype)Forrst
 {
     return UIColorFromRGB(0x5b9a68);
 }
-+ (UIColor *)Foursquare
++ (instancetype)Foursquare
 {
     return UIColorFromRGB(0x25a0ca);
 }
-+ (UIColor *)Garmin
++ (instancetype)Garmin
 {
     return UIColorFromRGB(0x007cc3);
 }
-+ (UIColor *)GetGlue
++ (instancetype)GetGlue
 {
     return UIColorFromRGB(0x2d75a2);
 }
-+ (UIColor *)Gimmebar
++ (instancetype)Gimmebar
 {
     return UIColorFromRGB(0xf70078);
 }
-+ (UIColor *)GitHub
++ (instancetype)GitHub
 {
     return UIColorFromRGB(0x171515);
 }
-+ (UIColor *)GoogleBlue
++ (instancetype)GoogleBlue
 {
     return UIColorFromRGB(0x0140ca);
 }
-+ (UIColor *)GoogleGreen
++ (instancetype)GoogleGreen
 {
     return UIColorFromRGB(0x16a61e);
 }
-+ (UIColor *)GoogleRed
++ (instancetype)GoogleRed
 {
     return UIColorFromRGB(0xdd1812);
 }
-+ (UIColor *)GoogleYellow
++ (instancetype)GoogleYellow
 {
     return UIColorFromRGB(0xfcca03);
 }
-+ (UIColor *)GooglePlus
++ (instancetype)GooglePlus
 {
     return UIColorFromRGB(0xdd4b39);
 }
-+ (UIColor *)Grooveshark
++ (instancetype)Grooveshark
 {
     return UIColorFromRGB(0xf77f00);
 }
-+ (UIColor *) Groupon
++ (instancetype) Groupon
 {
     return UIColorFromRGB(0x82b548);
 }
-+ (UIColor *) HackerNews
++ (instancetype) HackerNews
 {
     return UIColorFromRGB(0xff6600);
 }
-+ (UIColor *) HelloWallet
++ (instancetype) HelloWallet
 {
     return UIColorFromRGB(0x0085ca);
 }
-+ (UIColor *) HerokuLight
++ (instancetype) HerokuLight
 {
     return UIColorFromRGB(0xc7c5e6);
 }
-+ (UIColor *) HerokuDark
++ (instancetype) HerokuDark
 {
     return UIColorFromRGB(0x6567a5);
 }
-+ (UIColor *) HootSuite
++ (instancetype) HootSuite
 {
     return UIColorFromRGB(0x003366);
 }
-+ (UIColor *) Houzz
++ (instancetype) Houzz
 {
     return UIColorFromRGB(0x73ba37);
 }
-+ (UIColor *) HP
++ (instancetype) HP
 {
     return UIColorFromRGB(0x0096d6);
 }
-+ (UIColor *) HTML5
++ (instancetype) HTML5
 {
     return UIColorFromRGB(0xec6231);
 }
-+ (UIColor *) Hulu
++ (instancetype) Hulu
 {
     return UIColorFromRGB(0x8cc83b);
 }
-+ (UIColor *) IBM
++ (instancetype) IBM
 {
     return UIColorFromRGB(0x003e6a);
 }
-+ (UIColor *) IKEA
++ (instancetype) IKEA
 {
     return UIColorFromRGB(0xffcc33);
 }
-+ (UIColor *) IMDb
++ (instancetype) IMDb
 {
     return UIColorFromRGB(0xf3ce13);
 }
-+ (UIColor *) Instagram
++ (instancetype) Instagram
 {
     return UIColorFromRGB(0x3f729b);
 }
-+ (UIColor *) Instapaper
++ (instancetype) Instapaper
 {
     return UIColorFromRGB(0x1c1c1c);
 }
-+ (UIColor *) Intel
++ (instancetype) Intel
 {
     return UIColorFromRGB(0x0071c5);
 }
-+ (UIColor *) Intuit
++ (instancetype) Intuit
 {
     return UIColorFromRGB(0x365ebf);
 }
-+ (UIColor *) Kickstarter
++ (instancetype) Kickstarter
 {
     return UIColorFromRGB(0x76cc1e);
 }
-+ (UIColor *) kippt
++ (instancetype) kippt
 {
     return UIColorFromRGB(0xe03500);
 }
-+ (UIColor *) Kodery
++ (instancetype) Kodery
 {
     return UIColorFromRGB(0x00af81);
 }
-+ (UIColor *) LastFM
++ (instancetype) LastFM
 {
     return UIColorFromRGB(0xc3000d);
 }
-+ (UIColor *) LinkedIn
++ (instancetype) LinkedIn
 {
     return UIColorFromRGB(0x0e76a8);
 }
-+ (UIColor *) Livestream
++ (instancetype) Livestream
 {
     return UIColorFromRGB(0xcf0005);
 }
-+ (UIColor *) Lumo
++ (instancetype) Lumo
 {
     return UIColorFromRGB(0x576396);
 }
-+ (UIColor *) MakitaRed
++ (instancetype) MakitaRed
 {
     return UIColorFromRGB(0xd82028);
 }
-+ (UIColor *) MakitaBlue
++ (instancetype) MakitaBlue
 {
     return UIColorFromRGB(0x29a0b7);
 }
-+ (UIColor *) Mixpanel
++ (instancetype) Mixpanel
 {
     return UIColorFromRGB(0xa086d3);
 }
-+ (UIColor *) Meetup
++ (instancetype) Meetup
 {
     return UIColorFromRGB(0xe51937);
 }
-+ (UIColor *) Netflix
++ (instancetype) Netflix
 {
     return UIColorFromRGB(0xb9070a);
 }
-+ (UIColor *) Nokia
++ (instancetype) Nokia
 {
     return UIColorFromRGB(0x183693);
 }
-+ (UIColor *) NVIDIA
++ (instancetype) NVIDIA
 {
     return UIColorFromRGB(0x76b900);
 }
-+ (UIColor *) Odnoklassniki
++ (instancetype) Odnoklassniki
 {
     return UIColorFromRGB(0xed812b);
 }
-+ (UIColor *) Opera
++ (instancetype) Opera
 {
     return UIColorFromRGB(0xcc0f16);
 }
-+ (UIColor *) Path
++ (instancetype) Path
 {
     return UIColorFromRGB(0xe41f11);
 }
-+ (UIColor *) PayPalDark
++ (instancetype) PayPalDark
 {
     return UIColorFromRGB(0x1e477a);
 }
-+ (UIColor *) PayPalLight
++ (instancetype) PayPalLight
 {
     return UIColorFromRGB(0x3b7bbf);
 }
-+ (UIColor *) Pinboard
++ (instancetype) Pinboard
 {
     return UIColorFromRGB(0x0000e6);
 }
-+ (UIColor *) Pinterest
++ (instancetype) Pinterest
 {
     return UIColorFromRGB(0xc8232c);
 }
-+ (UIColor *) PlayStation
++ (instancetype) PlayStation
 {
     return UIColorFromRGB(0x665cbe);
 }
-+ (UIColor *) Pocket
++ (instancetype) Pocket
 {
     return UIColorFromRGB(0xee4056);
 }
-+ (UIColor *) Prezi
++ (instancetype) Prezi
 {
     return UIColorFromRGB(0x318bff);
 }
-+ (UIColor *) Pusha
++ (instancetype) Pusha
 {
     return UIColorFromRGB(0x0f71b4);
 }
-+ (UIColor *) Quora
++ (instancetype) Quora
 {
     return UIColorFromRGB(0xa82400);
 }
-+ (UIColor *) QuoteFm
++ (instancetype) QuoteFm
 {
     return UIColorFromRGB(0x66ceff);
 }
-+ (UIColor *) Rdio
++ (instancetype) Rdio
 {
     return UIColorFromRGB(0x008fd5);
 }
-+ (UIColor *) Readability
++ (instancetype) Readability
 {
     return UIColorFromRGB(0x9c0000);
 }
-+ (UIColor *) RedHat
++ (instancetype) RedHat
 {
     return UIColorFromRGB(0xcc0000);
 }
-+ (UIColor *) RedditBlue
++ (instancetype) RedditBlue
 {
     return UIColorFromRGB(0xcee2f8);
 }
-+ (UIColor *) RedditOrange
++ (instancetype) RedditOrange
 {
     return UIColorFromRGB(0xff4500);
 }
-+ (UIColor *) Resource
++ (instancetype) Resource
 {
     return UIColorFromRGB(0x7eb400);
 }
-+ (UIColor *) Rockpack
++ (instancetype) Rockpack
 {
     return UIColorFromRGB(0x0ba6ab);
 }
-+ (UIColor *) Roon
++ (instancetype) Roon
 {
     return UIColorFromRGB(0x62b0d9);
 }
-+ (UIColor *) RSS
++ (instancetype) RSS
 {
     return UIColorFromRGB(0xee802f);
 }
-+ (UIColor *) Salesforce
++ (instancetype) Salesforce
 {
     return UIColorFromRGB(0x1798c1);
 }
-+ (UIColor *) Samsung
++ (instancetype) Samsung
 {
     return UIColorFromRGB(0x0c4da2);
 }
-+ (UIColor *) Shopify
++ (instancetype) Shopify
 {
     return UIColorFromRGB(0x96bf48);
 }
-+ (UIColor *) Skype
++ (instancetype) Skype
 {
     return UIColorFromRGB(0x00aff0);
 }
-+ (UIColor *) SmashingMagazine
++ (instancetype) SmashingMagazine
 {
     return UIColorFromRGB(0xf0503a);
 }
-+ (UIColor *) Snagajob
++ (instancetype) Snagajob
 {
     return UIColorFromRGB(0xf47a20);
 }
-+ (UIColor *) Softonic
++ (instancetype) Softonic
 {
     return UIColorFromRGB(0x008ace);
 }
-+ (UIColor *) SoundCloud
++ (instancetype) SoundCloud
 {
     return UIColorFromRGB(0xff7700);
 }
-+ (UIColor *) SpaceBox
++ (instancetype) SpaceBox
 {
     return UIColorFromRGB(0xf86960);
 }
-+ (UIColor *) Spotify
++ (instancetype) Spotify
 {
     return UIColorFromRGB(0x81b71a);
 }
-+ (UIColor *) Sprint
++ (instancetype) Sprint
 {
     return UIColorFromRGB(0xfee100);
 }
-+ (UIColor *) Squarespace
++ (instancetype) Squarespace
 {
     return UIColorFromRGB(0x121212);
 }
-+ (UIColor *) StackOverflow
++ (instancetype) StackOverflow
 {
     return UIColorFromRGB(0xef8236);
 }
-+ (UIColor *) Staples
++ (instancetype) Staples
 {
     return UIColorFromRGB(0xcc0000);
 }
-+ (UIColor *) StatusChart
++ (instancetype) StatusChart
 {
     return UIColorFromRGB(0xd7584f);
 }
-+ (UIColor *) Stripe
++ (instancetype) Stripe
 {
     return UIColorFromRGB(0x008cdd);
 }
-+ (UIColor *) StudyBlue
++ (instancetype) StudyBlue
 {
     return UIColorFromRGB(0x00afe1);
 }
-+ (UIColor *) StumbleUpon
++ (instancetype) StumbleUpon
 {
     return UIColorFromRGB(0xf74425);
 }
-+ (UIColor *) TMobile
++ (instancetype) TMobile
 {
     return UIColorFromRGB(0xea0a8e);
 }
-+ (UIColor *) Technorati
++ (instancetype) Technorati
 {
     return UIColorFromRGB(0x40a800);
 }
-+ (UIColor *) TheNextWeb
++ (instancetype) TheNextWeb
 {
     return UIColorFromRGB(0xef4423);
 }
-+ (UIColor *) Treehouse
++ (instancetype) Treehouse
 {
     return UIColorFromRGB(0x5cb868);
 }
-+ (UIColor *) Trello
++ (instancetype) Trello
 {
     return UIColorFromRGB(0x256a92);
 }
-+ (UIColor *) Trulia
++ (instancetype) Trulia
 {
     return UIColorFromRGB(0x5eab1f);
 }
-+ (UIColor *) Tumblr
++ (instancetype) Tumblr
 {
     return UIColorFromRGB(0x34526f);
 }
-+ (UIColor *) TwitchTv
++ (instancetype) TwitchTv
 {
     return UIColorFromRGB(0x6441a5);
 }
-+ (UIColor *) Twitter
++ (instancetype) Twitter
 {
     return UIColorFromRGB(0x00acee);
 }
-+ (UIColor *) Typekit
++ (instancetype) Typekit
 {
     return UIColorFromRGB(0x9aca3c);
 }
-+ (UIColor *) TYPO3
++ (instancetype) TYPO3
 {
     return UIColorFromRGB(0xff8700);
 }
-+ (UIColor *) Ubuntu
++ (instancetype) Ubuntu
 {
     return UIColorFromRGB(0xdd4814);
 }
-+ (UIColor *) Ustream
++ (instancetype) Ustream
 {
     return UIColorFromRGB(0x3388ff);
 }
-+ (UIColor *) Venmo
++ (instancetype) Venmo
 {
     return UIColorFromRGB(0x3d95ce);
 }
-+ (UIColor *) Verizon
++ (instancetype) Verizon
 {
     return UIColorFromRGB(0xef1d1d);
 }
-+ (UIColor *) Vimeo
++ (instancetype) Vimeo
 {
     return UIColorFromRGB(0x44bbff);
 }
-+ (UIColor *) Vine
++ (instancetype) Vine
 {
     return UIColorFromRGB(0x00a478);
 }
-+ (UIColor *) Virb
++ (instancetype) Virb
 {
     return UIColorFromRGB(0x06afd8);
 }
-+ (UIColor *) VirginMedia
++ (instancetype) VirginMedia
 {
     return UIColorFromRGB(0xcc0000);
 }
-+ (UIColor *) VKontakte
++ (instancetype) VKontakte
 {
     return UIColorFromRGB(0x45668e);
 }
-+ (UIColor *) Wooga
++ (instancetype) Wooga
 {
     return UIColorFromRGB(0x5b009c);
 }
-+ (UIColor *) WordPressBlue
++ (instancetype) WordPressBlue
 {
     return UIColorFromRGB(0x21759b);
 }
-+ (UIColor *) WordPressOrange
++ (instancetype) WordPressOrange
 {
     return UIColorFromRGB(0xd54e21);
 }
-+ (UIColor *) WordPressGrey
++ (instancetype) WordPressGrey
 {
     return UIColorFromRGB(0x464646);
 }
-+ (UIColor *) Wunderlist
++ (instancetype) Wunderlist
 {
     return UIColorFromRGB(0x2b88d9);
 }
-+ (UIColor *) XBOX
++ (instancetype) XBOX
 {
     return UIColorFromRGB(0x9bc848);
 }
-+ (UIColor *) XING
++ (instancetype) XING
 {
     return UIColorFromRGB(0x126567);
 }
-+ (UIColor *) Yahoo
++ (instancetype) Yahoo
 {
     return UIColorFromRGB(0x720e9e);
 }
-+ (UIColor *) Yandex
++ (instancetype) Yandex
 {
     return UIColorFromRGB(0xffcc00);
 }
-+ (UIColor *) Yelp
++ (instancetype) Yelp
 {
     return UIColorFromRGB(0xc41200);
 }
-+ (UIColor *) YouTube
++ (instancetype) YouTube
 {
     return UIColorFromRGB(0xc4302b);
 }
-+ (UIColor *) Zalongo
++ (instancetype) Zalongo
 {
     return UIColorFromRGB(0x5498dc);
 }
-+ (UIColor *) Zendesk
++ (instancetype) Zendesk
 {
     return UIColorFromRGB(0x78a300);
 }
-+ (UIColor *) Zerply
++ (instancetype) Zerply
 {
     return UIColorFromRGB(0x9dcc7a);
 }
-+ (UIColor *) Zootool
++ (instancetype) Zootool
 {
     return UIColorFromRGB(0x5e8b1d);
 }
