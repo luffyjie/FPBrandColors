@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.author       = { "Melih Buyukbayram" => "melih@faprica.com" }
   s.platform     = :ios
   s.source       = { :git => "https://github.com/magtory/FPBrandColors.git", :tag => "0.1.3" }
-  s.source_files  = 'FPBrandColor/UIColor+FPBrandColor.*'
+  s.source_files  = 'FPBrandColor/**.{h,m}'
 
 end
